@@ -1,0 +1,9 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/healthalst}
+    username: ${SPRING_DATASOURCE_USERNAME:healthalst}
+    password: ${SPRING_DATASOURCE_PASSWORD:healthalst_dev}
+

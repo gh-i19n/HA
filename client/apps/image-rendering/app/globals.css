@@ -1,0 +1,74 @@
+.page-shell {
+  min-height: 100vh;
+  padding: clamp(1.25rem, 4vw, 4rem);
+}
+
+.page-content {
+  width: min(70rem, 100%);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 16ch;
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.lede {
+  max-width: 42rem;
+  margin: 1.5rem 0 2.5rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.status-card {
+  display: grid;
+  gap: 1.5rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--surface);
+  box-shadow: 0 1.25rem 4rem rgb(23 33 27 / 8%);
+}
+
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+}
+
+.status-meta div {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.status-meta dt {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.status-meta dd {
+  margin: 0.25rem 0 0;
+  font-weight: 700;
+}
+

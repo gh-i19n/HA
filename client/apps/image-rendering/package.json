@@ -1,0 +1,32 @@
+{
+  "name": "image-rendering",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --port 3003",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "clean": "rm -rf .next coverage"
+  },
+  "dependencies": {
+    "@healthalst/ui": "workspace:*",
+    "next": "16.2.11",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@healthalst/eslint-config": "workspace:*",
+    "@healthalst/test-utils": "workspace:*",
+    "@healthalst/typescript-config": "workspace:*",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.39.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}

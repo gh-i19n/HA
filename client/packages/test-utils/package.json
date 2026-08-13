@@ -1,0 +1,23 @@
+{
+  "name": "@healthalst/test-utils",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "clean": "rm -rf dist coverage"
+  },
+  "devDependencies": {
+    "@healthalst/eslint-config": "workspace:*",
+    "@healthalst/typescript-config": "workspace:*",
+    "eslint": "^9.39.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}
+

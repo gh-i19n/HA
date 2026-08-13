@@ -1,0 +1,8 @@
+import { PlatformOverview } from "@/modules/platform/_views/platform-overview";
+
+export const dynamic = "force-dynamic";
+
+export default function HomePage() {
+  return <PlatformOverview />;
+}
+

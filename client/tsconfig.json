@@ -1,0 +1,4 @@
+{
+  "extends": "@healthalst/typescript-config/base.json"
+}
+
