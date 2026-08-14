@@ -1,4 +1,4 @@
-const backendUrl = process.env.BACKEND_API_URL ?? "http://localhost:8080";
+const backendUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8080'
 
 /** Forwards a same-origin BFF request to Spring while preserving the session cookie. */
 export async function proxyBackendRequest(request: Request, path: string): Promise<Response> {
