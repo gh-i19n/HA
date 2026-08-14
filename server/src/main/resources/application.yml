@@ -29,8 +29,8 @@ server:
   port: ${SERVER_PORT:8080}
   shutdown: graceful
 
-cors:
-  allowed-origin-patterns: ${CORS_ALLOWED_ORIGIN_PATTERNS:http://localhost:3003,http://localhost:3004,http://localhost:3005}
+# cors:
+#   allowed-origin-patterns: ${CORS_ALLOWED_ORIGIN_PATTERNS:http://localhost:3003}
 
 management:
   endpoints:
@@ -49,3 +49,13 @@ springdoc:
   swagger-ui:
     enabled: ${SPRINGDOC_SWAGGER_UI_ENABLED:true}
 
+healthalst:
+  app-url: ${HEALTHALST_APP_URL:http://localhost:3003}
+  email:
+    # `noop` is the safe default for test/CI runs. Set EMAIL_PROVIDER=resend with
+    # RESEND_API_KEY and EMAIL_FROM to enable real delivery.
+    provider: ${EMAIL_PROVIDER:noop}
+    from: ${EMAIL_FROM:}
+    resend:
+      api-key: ${RESEND_API_KEY:}
+      base-url: ${RESEND_BASE_URL:https://api.resend.com}

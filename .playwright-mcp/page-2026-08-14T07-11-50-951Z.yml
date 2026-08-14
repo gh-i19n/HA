@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e9] [cursor=pointer]
+  - alert [ref=e13]
+  - main [ref=e90]:
+    - generic [ref=e92]:
+      - paragraph [ref=e93]: Create your account
+      - heading "Start with the right workspace." [level=1] [ref=e94]
+      - paragraph [ref=e95]: Patients receive results privately. Clinic owners create a secure workspace. Report staff register now and join a clinic when their clinic adds them.
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - button "Patient" [ref=e99]
+          - button "Clinic owner" [ref=e105]
+          - button "Report staff" [ref=e110]
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]: Full name
+            - textbox "Full name" [ref=e117]
+          - generic [ref=e118]:
+            - generic [ref=e119]: Email
+            - textbox "Email" [ref=e120]
+          - generic [ref=e121]:
+            - generic [ref=e122]: Password
+            - textbox "Password" [ref=e123]
+            - generic [ref=e124]: At least 10 characters
+          - button "Create account" [ref=e125] [cursor=pointer]
+          - button "Already registered? Sign in" [ref=e126] [cursor=pointer]

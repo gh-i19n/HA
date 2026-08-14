@@ -1,0 +1,59 @@
+/* Utility Components and Custom Styles */
+
+/* Card hover effects */
+.card {
+    transition: transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--foreground);
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--foreground);
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+    background: oklch(0 0 0 / 0.06);
+    border-radius: 10px;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari, Opera */
+}
+
+/*
+ * iOS zooms the page in when a focused input's font is under 16px, so we pin
+ * inputs to 16px — but only on phone-width viewports where that zoom actually
+ * happens. Leaving this rule unscoped made it beat every Tailwind text-size
+ * utility (it is unlayered, so it outranks `@layer utilities`), which meant an
+ * input could never be given a smaller, denser size on desktop. Scoping it to
+ * the mobile breakpoint keeps the zoom guard where it matters and lets
+ * `text-xs` / `text-sm` work on inputs everywhere else.
+ */
+@media (max-width: 640px) {
+    input,
+    textarea,
+    select {
+        font-size: 16px;
+    }
+}

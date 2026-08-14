@@ -1,0 +1,140 @@
+- generic [ref=f5e1]:
+  - button "Open Next.js Dev Tools" [ref=f5e7] [cursor=pointer]
+  - alert [ref=f5e11]
+  - main [ref=f5e12]:
+    - generic [ref=f5e14]:
+      - paragraph [ref=f5e15]: Book an appointment
+      - heading "Choose your laboratory." [level=1] [ref=f5e16]
+      - paragraph [ref=f5e17]: Your request goes straight to the laboratory team, who confirm the appointment time by email.
+      - generic [ref=f5e26]:
+        - generic [ref=f5e27]:
+          - generic [ref=f5e28]:
+            - generic [ref=f5e29]: Full name
+            - textbox "Full name" [ref=f5e30]
+          - generic [ref=f5e31]:
+            - generic [ref=f5e32]: Email
+            - textbox "Email" [ref=f5e33]
+        - generic [ref=f5e34]:
+          - generic [ref=f5e35]: Laboratory
+          - combobox [ref=f5e36]:
+            - generic: Choose a laboratory
+          - combobox [ref=f5e37]
+        - generic [ref=f5e38]:
+          - generic [ref=f5e39]:
+            - generic [ref=f5e40]: Examination
+            - textbox "Examination" [ref=f5e41]:
+              - /placeholder: e.g. Chest X-ray, MRI brain
+          - generic [ref=f5e42]:
+            - generic [ref=f5e43]: Preferred date
+            - button "Preferred date" [expanded] [ref=f5e44]:
+              - generic [ref=f5e49]: Choose a date
+        - paragraph [ref=f5e50]: The laboratory will confirm the exact time by email. No account is needed to book.
+        - button "Request appointment" [ref=f5e51] [cursor=pointer]
+  - dialog [ref=f5e53]:
+    - generic [ref=f5e55]:
+      - navigation "Navigation bar":
+        - button "Go to the Previous Month" [active] [ref=f5e56] [cursor=pointer]
+        - button "Go to the Next Month" [ref=f5e59] [cursor=pointer]
+      - generic [ref=f5e62]:
+        - status [ref=f5e64]: August 2026
+        - grid "August 2026" [ref=f5e65]:
+          - rowgroup [ref=f5e66]:
+            - row [ref=f5e67]:
+              - columnheader [ref=f5e68]: Su
+              - columnheader [ref=f5e69]: Mo
+              - columnheader [ref=f5e70]: Tu
+              - columnheader [ref=f5e71]: We
+              - columnheader [ref=f5e72]: Th
+              - columnheader [ref=f5e73]: Fr
+              - columnheader [ref=f5e74]: Sa
+          - rowgroup [ref=f5e75]:
+            - row [ref=f5e76]:
+              - gridcell "Sunday, July 26th, 2026" [ref=f5e77]:
+                - button "Sunday, July 26th, 2026" [disabled]: "26"
+              - gridcell "Monday, July 27th, 2026" [ref=f5e78]:
+                - button "Monday, July 27th, 2026" [disabled]: "27"
+              - gridcell "Tuesday, July 28th, 2026" [ref=f5e79]:
+                - button "Tuesday, July 28th, 2026" [disabled]: "28"
+              - gridcell "Wednesday, July 29th, 2026" [ref=f5e80]:
+                - button "Wednesday, July 29th, 2026" [disabled]: "29"
+              - gridcell "Thursday, July 30th, 2026" [ref=f5e81]:
+                - button "Thursday, July 30th, 2026" [disabled]: "30"
+              - gridcell "Friday, July 31st, 2026" [ref=f5e82]:
+                - button "Friday, July 31st, 2026" [disabled]: "31"
+              - gridcell "Saturday, August 1st, 2026" [ref=f5e83]:
+                - button "Saturday, August 1st, 2026" [disabled]: "1"
+            - row [ref=f5e84]:
+              - gridcell "Sunday, August 2nd, 2026" [ref=f5e85]:
+                - button "Sunday, August 2nd, 2026" [disabled]: "2"
+              - gridcell "Monday, August 3rd, 2026" [ref=f5e86]:
+                - button "Monday, August 3rd, 2026" [disabled]: "3"
+              - gridcell "Tuesday, August 4th, 2026" [ref=f5e87]:
+                - button "Tuesday, August 4th, 2026" [disabled]: "4"
+              - gridcell "Wednesday, August 5th, 2026" [ref=f5e88]:
+                - button "Wednesday, August 5th, 2026" [disabled]: "5"
+              - gridcell "Thursday, August 6th, 2026" [ref=f5e89]:
+                - button "Thursday, August 6th, 2026" [disabled]: "6"
+              - gridcell "Friday, August 7th, 2026" [ref=f5e90]:
+                - button "Friday, August 7th, 2026" [disabled]: "7"
+              - gridcell "Saturday, August 8th, 2026" [ref=f5e91]:
+                - button "Saturday, August 8th, 2026" [disabled]: "8"
+            - row [ref=f5e92]:
+              - gridcell "Sunday, August 9th, 2026" [ref=f5e93]:
+                - button "Sunday, August 9th, 2026" [disabled]: "9"
+              - gridcell "Monday, August 10th, 2026" [ref=f5e94]:
+                - button "Monday, August 10th, 2026" [disabled]: "10"
+              - gridcell "Tuesday, August 11th, 2026" [ref=f5e95]:
+                - button "Tuesday, August 11th, 2026" [disabled]: "11"
+              - gridcell "Wednesday, August 12th, 2026" [ref=f5e96]:
+                - button "Wednesday, August 12th, 2026" [disabled]: "12"
+              - gridcell "Thursday, August 13th, 2026" [ref=f5e97]:
+                - button "Thursday, August 13th, 2026" [disabled]: "13"
+              - gridcell [ref=f5e98]:
+                - button "Today, Friday, August 14th, 2026" [ref=f5e99] [cursor=pointer]: "14"
+              - gridcell [ref=f5e100]:
+                - button "Saturday, August 15th, 2026" [ref=f5e101] [cursor=pointer]: "15"
+            - row [ref=f5e102]:
+              - gridcell [ref=f5e103]:
+                - button "Sunday, August 16th, 2026" [ref=f5e104] [cursor=pointer]: "16"
+              - gridcell [ref=f5e105]:
+                - button "Monday, August 17th, 2026" [ref=f5e106] [cursor=pointer]: "17"
+              - gridcell [ref=f5e107]:
+                - button "Tuesday, August 18th, 2026" [ref=f5e108] [cursor=pointer]: "18"
+              - gridcell [ref=f5e109]:
+                - button "Wednesday, August 19th, 2026" [ref=f5e110] [cursor=pointer]: "19"
+              - gridcell [ref=f5e111]:
+                - button "Thursday, August 20th, 2026" [ref=f5e112] [cursor=pointer]: "20"
+              - gridcell [ref=f5e113]:
+                - button "Friday, August 21st, 2026" [ref=f5e114] [cursor=pointer]: "21"
+              - gridcell [ref=f5e115]:
+                - button "Saturday, August 22nd, 2026" [ref=f5e116] [cursor=pointer]: "22"
+            - row [ref=f5e117]:
+              - gridcell [ref=f5e118]:
+                - button "Sunday, August 23rd, 2026" [ref=f5e119] [cursor=pointer]: "23"
+              - gridcell [ref=f5e120]:
+                - button "Monday, August 24th, 2026" [ref=f5e121] [cursor=pointer]: "24"
+              - gridcell [ref=f5e122]:
+                - button "Tuesday, August 25th, 2026" [ref=f5e123] [cursor=pointer]: "25"
+              - gridcell [ref=f5e124]:
+                - button "Wednesday, August 26th, 2026" [ref=f5e125] [cursor=pointer]: "26"
+              - gridcell [ref=f5e126]:
+                - button "Thursday, August 27th, 2026" [ref=f5e127] [cursor=pointer]: "27"
+              - gridcell [ref=f5e128]:
+                - button "Friday, August 28th, 2026" [ref=f5e129] [cursor=pointer]: "28"
+              - gridcell [ref=f5e130]:
+                - button "Saturday, August 29th, 2026" [ref=f5e131] [cursor=pointer]: "29"
+            - row [ref=f5e132]:
+              - gridcell [ref=f5e133]:
+                - button "Sunday, August 30th, 2026" [ref=f5e134] [cursor=pointer]: "30"
+              - gridcell [ref=f5e135]:
+                - button "Monday, August 31st, 2026" [ref=f5e136] [cursor=pointer]: "31"
+              - gridcell [ref=f5e137]:
+                - button "Tuesday, September 1st, 2026" [ref=f5e138] [cursor=pointer]: "1"
+              - gridcell [ref=f5e139]:
+                - button "Wednesday, September 2nd, 2026" [ref=f5e140] [cursor=pointer]: "2"
+              - gridcell [ref=f5e141]:
+                - button "Thursday, September 3rd, 2026" [ref=f5e142] [cursor=pointer]: "3"
+              - gridcell [ref=f5e143]:
+                - button "Friday, September 4th, 2026" [ref=f5e144] [cursor=pointer]: "4"
+              - gridcell [ref=f5e145]:
+                - button "Saturday, September 5th, 2026" [ref=f5e146] [cursor=pointer]: "5"

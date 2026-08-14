@@ -1,0 +1,616 @@
+- generic:
+  - button "Open Next.js Dev Tools" [ref=e9] [cursor=pointer]
+  - alert
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - button:
+              - generic:
+                - generic: Lagos Imaging Centre
+                - generic: Imaging centre
+          - generic:
+            - generic:
+              - generic: Clinic workspace
+              - generic:
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: /dashboard
+                      - generic: Overview
+                  - listitem:
+                    - link:
+                      - /url: /reports
+                      - generic: Reports
+                    - generic: "501"
+                  - listitem:
+                    - link:
+                      - /url: /bookings
+                      - generic: Bookings
+                  - listitem:
+                    - link:
+                      - /url: /templates
+                      - generic: Report templates
+            - generic:
+              - generic: Manage
+              - generic:
+                - list:
+                  - listitem:
+                    - link:
+                      - /url: /settings/profile
+                      - generic: Settings
+          - generic:
+            - generic:
+              - paragraph: Signed in as
+              - paragraph: Browser Staff
+              - paragraph: Report staff
+          - button
+    - main:
+      - generic:
+        - generic:
+          - button:
+            - generic: Toggle Sidebar
+          - generic:
+            - paragraph: Lagos Imaging Centre
+            - paragraph: Report operations
+        - generic:
+          - button:
+            - generic: "1"
+          - button: BS
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: Imaging operations · Delivery queue
+              - heading [level=1]: Reports dashboard
+              - paragraph: Review the clinic queue, attach reports to completed bookings, and control when results become available to patients.
+            - generic:
+              - generic:
+                - button: Create from template
+                - button: Attach report
+          - region:
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Clinic reports
+                  - paragraph: "501"
+              - paragraph: Across the delivery queue
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Pending review
+                  - paragraph: "3"
+              - paragraph: On the current page
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Available
+                  - paragraph: "22"
+              - paragraph: Published on this page
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Bookings ready
+                  - paragraph: "100"
+              - paragraph: Eligible for report upload
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Clinic report queue
+                  - generic: "501"
+                - generic: Latest uploads first · 25 records per page · report files load only when opened
+              - generic:
+                - generic:
+                  - searchbox
+                - combobox:
+                  - generic: All statuses
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - table:
+                      - caption: Imaging report delivery list
+                      - rowgroup:
+                        - row:
+                          - columnheader: Patient
+                          - columnheader: Examination
+                          - columnheader: Service date
+                          - columnheader: Status
+                          - columnheader: Last updated
+                          - columnheader: Action
+                      - rowgroup:
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: chest_xray-97e2369f-c73a-3502-9564-66437580085d.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 13 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-001.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 12 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-002.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 11 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: imaging-report-003.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 10 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-004.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 9 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-005.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 8 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: imaging-report-006.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 7 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-007.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 6 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-008.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 5 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: imaging-report-009.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 4 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-010.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 3 Aug 2026
+                          - cell:
+                            - generic: Pending review
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button: Make available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-011.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 2 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: imaging-report-012.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 1 Aug 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-013.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 31 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-014.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 30 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: imaging-report-015.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 29 Jul 2026
+                          - cell:
+                            - generic: Pending review
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button: Make available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-016.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 28 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-017.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 27 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: imaging-report-018.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 26 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-019.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 25 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-020.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 24 Jul 2026
+                          - cell:
+                            - generic: Pending review
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button: Make available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: imaging-report-021.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 23 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-022.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 22 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: KA
+                              - generic:
+                                - generic: Kelechi Adeyemi
+                                - generic: imaging-report-023.pdf
+                          - cell:
+                            - generic: Abdominal ultrasound
+                          - cell: 21 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: AO
+                              - generic:
+                                - generic: Amina Okafor
+                                - generic: imaging-report-024.pdf
+                          - cell:
+                            - generic: Chest X-ray
+                          - cell: 20 Jul 2026
+                          - cell:
+                            - generic: Available
+                          - cell: 14 Aug 2026
+                          - cell:
+                            - generic:
+                              - button: Preview
+                              - button [disabled]: Available
+                - generic:
+                  - paragraph: Page 1 of 21
+                  - generic:
+                    - button [disabled]: Previous
+                    - button: Next
+          - region:
+            - generic:
+              - generic:
+                - heading [level=2]: Attach a report to a booking
+                - paragraph: 100 completed bookings are ready for report upload.
+            - generic:
+              - button: Attach report
+  - dialog:
+    - generic:
+      - generic:
+        - heading [level=2]: Create structured report
+      - paragraph: Choose a booking and complete a clinically reviewed template.
+    - generic:
+      - generic:
+        - status:
+          - generic: Clinical responsibility
+          - paragraph: This template standardizes document structure. An authorized imaging professional remains responsible for every finding and impression.
+        - generic:
+          - generic:
+            - text: Patient booking
+            - combobox:
+              - generic: Amina Okafor · Chest X-ray
+            - combobox
+          - generic:
+            - text: Report template
+            - combobox [expanded]:
+              - generic: Choose template
+            - combobox
+        - generic:
+          - text: Clinical indication
+          - textbox
+        - generic:
+          - generic:
+            - text: Technique
+            - textbox
+          - generic:
+            - text: Comparison
+            - textbox
+        - generic:
+          - text: Findings
+          - generic: required
+          - textbox
+        - generic:
+          - text: Impression
+          - generic: required
+          - textbox
+        - generic:
+          - generic:
+            - text: Reporting professional
+            - generic: required
+            - textbox
+          - generic:
+            - text: Professional title
+            - textbox: Consultant Radiologist
+    - generic:
+      - generic:
+        - button: Cancel
+        - button [disabled]: Create pending report
+    - button:
+      - generic: Close
+  - listbox [ref=e2611]:
+    - option "Chest X-ray report" [active] [ref=e2612]
+    - option "MRI brain report" [ref=e2615]

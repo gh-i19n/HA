@@ -1,0 +1,217 @@
+/* Minimal animation utilities used across the current apps and shared UI */
+
+@property --radix-accordion-content-height {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0px;
+}
+
+/*
+ * Radix's accordion is built on its collapsible and forwards the measured
+ * height as `--radix-accordion-content-height: var(--radix-collapsible-content-height)`.
+ * Without this declaration that inner variable is an untyped string, so the
+ * typed accordion property above cannot accept it and falls back to its
+ * `initial-value: 0px` — the height then jumps straight to 0 instead of
+ * interpolating, which reads as the panel snapping shut with no animation.
+ * Declaring it here fixes both the accordion and the collapsible.
+ */
+@property --radix-collapsible-content-height {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0px;
+}
+
+@utility animate-in {
+    animation-name: ui-enter;
+    animation-duration: var(--motion-normal);
+    animation-timing-function: var(--ease-standard);
+    animation-fill-mode: both;
+}
+
+@utility animate-out {
+    animation-name: ui-exit;
+    animation-duration: var(--motion-normal);
+    animation-timing-function: var(--ease-standard);
+    animation-fill-mode: both;
+}
+
+@utility fade-in-0 {
+    --tw-enter-opacity: 0;
+}
+
+@utility fade-out-0 {
+    --tw-exit-opacity: 0;
+}
+
+@utility zoom-in-95 {
+    --tw-enter-scale: .95;
+}
+
+@utility zoom-out-95 {
+    --tw-exit-scale: .95;
+}
+
+@utility slide-in-from-top-2 {
+    --tw-enter-translate-y: -0.5rem;
+}
+
+@utility slide-in-from-bottom-2 {
+    --tw-enter-translate-y: 0.5rem;
+}
+
+@utility slide-in-from-left-2 {
+    --tw-enter-translate-x: -0.5rem;
+}
+
+@utility slide-in-from-right-2 {
+    --tw-enter-translate-x: 0.5rem;
+}
+
+@utility slide-in-from-top {
+    --tw-enter-translate-y: -100%;
+}
+
+@utility slide-in-from-bottom {
+    --tw-enter-translate-y: 100%;
+}
+
+@utility slide-in-from-left {
+    --tw-enter-translate-x: -100%;
+}
+
+@utility slide-in-from-right {
+    --tw-enter-translate-x: 100%;
+}
+
+@utility slide-out-to-top {
+    --tw-exit-translate-y: -100%;
+}
+
+@utility slide-out-to-bottom {
+    --tw-exit-translate-y: 100%;
+}
+
+@utility slide-out-to-left {
+    --tw-exit-translate-x: -100%;
+}
+
+@utility slide-out-to-right {
+    --tw-exit-translate-x: 100%;
+}
+
+@utility animate-accordion-down {
+    animation: accordion-down var(--motion-fast) var(--ease-standard);
+}
+
+@utility animate-accordion-up {
+    animation: accordion-up var(--motion-fast) var(--ease-standard);
+}
+
+@utility animate-collapsible-down {
+    animation: collapsible-down var(--motion-fast) var(--ease-standard);
+}
+
+@utility animate-collapsible-up {
+    animation: collapsible-up var(--motion-fast) var(--ease-standard);
+}
+
+@utility animate-entrance {
+    animation: ui-slide-in-from-bottom var(--motion-normal) var(--ease-standard);
+}
+
+@layer base {
+    :where(.animate-in, .animate-out) {
+        animation-duration: var(--motion-normal);
+        animation-timing-function: var(--ease-standard);
+    }
+}
+
+/* Keyframe Definitions */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes ui-slide-in-from-top {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ui-slide-in-from-bottom {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes ui-enter {
+    from {
+        opacity: var(--tw-enter-opacity, 1);
+        transform: translate3d(var(--tw-enter-translate-x, 0),
+        var(--tw-enter-translate-y, 0), 0) scale3d(var(--tw-enter-scale, 1),
+        var(--tw-enter-scale, 1), var(--tw-enter-scale, 1));
+    }
+}
+
+@keyframes ui-exit {
+    to {
+        opacity: var(--tw-exit-opacity, 1);
+        transform: translate3d(var(--tw-exit-translate-x, 0),
+        var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1),
+        var(--tw-exit-scale, 1), var(--tw-exit-scale, 1));
+    }
+}
+
+@keyframes accordion-down {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--radix-accordion-content-height, 0px);
+    }
+}
+
+@keyframes accordion-up {
+    from {
+        height: var(--radix-accordion-content-height, 0px);
+    }
+    to {
+        height: 0;
+    }
+}
+
+@keyframes collapsible-down {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: var(--radix-collapsible-content-height, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes collapsible-up {
+    from {
+        height: var(--radix-collapsible-content-height, 0px);
+        opacity: 1;
+    }
+    to {
+        height: 0;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,192 @@
+:root {
+    --font-family-sans: var(--font-inter-tight), "Inter Tight", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-family-mono: var(--font-jetbrains-mono), "JetBrains Mono", "IBM Plex Mono", "SF Mono", "Cascadia Code", "Roboto Mono", ui-monospace, monospace;
+    --font-family-serif: var(--font-fraunces), Fraunces, "Source Serif 4", Georgia, serif;
+
+    --motion-fast: 160ms;
+    --motion-normal: 240ms;
+    --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+    /*
+     * healthAlst has one role-based color language. Neutral surfaces do most of
+     * the visual work, teal identifies action and selection, and the three
+     * support hues appear only when success, caution, or danger has meaning.
+     * OKLCH keeps perceived lightness predictable when these roles switch mode.
+     */
+    --background: oklch(0.985 0.004 255);
+    --surface: oklch(0.998 0.001 255);
+    --surface-subtle: oklch(0.96 0.008 255);
+    --surface-hover: oklch(0.925 0.01 255);
+    --foreground: oklch(0.225 0.018 260);
+    --foreground-muted: oklch(0.44 0.022 260);
+    --border-subtle: oklch(0.86 0.014 255);
+    --border-strong: oklch(0.65 0.02 260);
+
+    /* --primary: oklch(0.5 0.19 175);
+    --primary-hover: oklch(0.44 0.18 175);
+    --primary-subtle: oklch(0.94 0.035 175);
+    --primary-foreground: oklch(0.985 0.004 255); */
+    
+    --primary: #0F766E;
+    --primary-hover: #0F766E;
+    --primary-subtle: oklch(0.94 0.035 175);
+    --primary-foreground: oklch(0.985 0.004 255);
+
+    --success: oklch(0.41 0.12 150);
+    --success-subtle: oklch(0.945 0.035 150);
+    --warning: oklch(0.43 0.105 75);
+    --warning-subtle: oklch(0.95 0.04 75);
+    --danger: oklch(0.46 0.17 25);
+    --danger-hover: oklch(0.4 0.16 25);
+    --danger-subtle: oklch(0.95 0.04 25);
+    --danger-foreground: oklch(0.985 0.004 255);
+
+    /* Inverse surfaces stay dark in both modes for the sidebar and auth shell. */
+    --inverse-surface: oklch(0.18 0.014 260);
+    --inverse-foreground: oklch(0.94 0.008 255);
+    --inverse-muted: oklch(0.72 0.018 255);
+    --inverse-hover: oklch(0.25 0.016 260);
+    --inverse-border: oklch(0.34 0.018 260);
+    --inverse-primary: oklch(0.72 0.14 175);
+    --overlay: oklch(0 0 0);
+
+    --radius: 0.5rem;
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.5rem;
+    --text-5xl: 3.5rem;
+    --text-6xl: 4.5rem;
+
+    --leading-none: 1;
+    --leading-tight: 1.1;
+    --leading-snug: 1.25;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+    --leading-loose: 2;
+
+    /*
+     * Shadows are pure elevation now — no `0 1px 0` highlight layer, which
+     * used to draw a fake border line. Surfaces rest on the canvas via soft
+     * layered shadows instead of outlines.
+     */
+    --shadow-xs: 0 1px 2px oklch(0 0 0 / 0.04);
+    --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.04), 0 2px 4px oklch(0 0 0 / 0.04);
+    --shadow: 0 2px 4px oklch(0 0 0 / 0.04), 0 4px 10px oklch(0 0 0 / 0.05);
+    --shadow-md: 0 4px 8px oklch(0 0 0 / 0.05), 0 8px 20px oklch(0 0 0 / 0.07);
+    --shadow-lg: 0 8px 16px oklch(0 0 0 / 0.06), 0 16px 40px oklch(0 0 0 / 0.1);
+    --shadow-xl: 0 12px 24px oklch(0 0 0 / 0.08), 0 24px 56px oklch(0 0 0 / 0.14);
+}
+
+.dark {
+    --background: oklch(0.16 0.012 260);
+    --surface: oklch(0.205 0.014 260);
+    --surface-subtle: oklch(0.25 0.016 260);
+    --surface-hover: oklch(0.29 0.018 260);
+    --foreground: oklch(0.94 0.008 255);
+    --foreground-muted: oklch(0.72 0.018 255);
+    --border-subtle: oklch(0.34 0.018 260);
+    --border-strong: oklch(0.52 0.02 260);
+
+    --primary: oklch(0.72 0.14 175);
+    --primary-hover: oklch(0.77 0.13 175);
+    --primary-subtle: oklch(0.27 0.05 175);
+    --primary-foreground: oklch(0.16 0.012 260);
+
+    --success: oklch(0.74 0.115 150);
+    --success-subtle: oklch(0.25 0.04 150);
+    --warning: oklch(0.79 0.12 75);
+    --warning-subtle: oklch(0.27 0.045 75);
+    --danger: oklch(0.73 0.15 25);
+    --danger-hover: oklch(0.78 0.14 25);
+    --danger-subtle: oklch(0.27 0.055 25);
+    --danger-foreground: oklch(0.16 0.012 260);
+
+    --shadow-xs: 0 1px 2px oklch(0 0 0 / 0.5);
+    --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.5), 0 2px 4px oklch(0 0 0 / 0.45);
+    --shadow: 0 2px 4px oklch(0 0 0 / 0.5), 0 4px 10px oklch(0 0 0 / 0.5);
+    --shadow-md: 0 4px 8px oklch(0 0 0 / 0.55), 0 8px 20px oklch(0 0 0 / 0.55);
+    --shadow-lg: 0 8px 16px oklch(0 0 0 / 0.6), 0 16px 40px oklch(0 0 0 / 0.6);
+    --shadow-xl: 0 12px 24px oklch(0 0 0 / 0.65), 0 24px 56px oklch(0 0 0 / 0.7);
+}
+
+@theme inline {
+    --font-sans: var(--font-family-sans);
+    --font-mono: var(--font-family-mono);
+    --motion-fast: var(--motion-fast);
+    --motion-normal: var(--motion-normal);
+    --ease-standard: var(--ease-standard);
+
+    /* Canonical application roles. */
+    --color-background: var(--background);
+    --color-surface: var(--surface);
+    --color-surface-subtle: var(--surface-subtle);
+    --color-surface-hover: var(--surface-hover);
+    --color-foreground: var(--foreground);
+    --color-foreground-muted: var(--foreground-muted);
+    --color-border: var(--border-subtle);
+    --color-border-strong: var(--border-strong);
+    --color-primary: var(--primary);
+    --color-primary-hover: var(--primary-hover);
+    --color-primary-subtle: var(--primary-subtle);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-success: var(--success);
+    --color-success-subtle: var(--success-subtle);
+    --color-warning: var(--warning);
+    --color-warning-subtle: var(--warning-subtle);
+    --color-danger: var(--danger);
+    --color-danger-hover: var(--danger-hover);
+    --color-danger-subtle: var(--danger-subtle);
+    --color-danger-foreground: var(--danger-foreground);
+    --color-inverse-surface: var(--inverse-surface);
+    --color-inverse-foreground: var(--inverse-foreground);
+    --color-inverse-muted: var(--inverse-muted);
+    --color-overlay: var(--overlay);
+
+    /*
+     * Component-library adapters describe component roles but never introduce
+     * another palette. They all resolve back to the canonical values above.
+     */
+    --color-card: var(--surface);
+    --color-card-foreground: var(--foreground);
+    --color-popover: var(--surface);
+    --color-popover-foreground: var(--foreground);
+    --color-input: var(--border-strong);
+    --color-ring: var(--primary);
+    --color-muted: var(--surface-subtle);
+    --color-muted-foreground: var(--foreground-muted);
+    --color-secondary: var(--surface-subtle);
+    --color-secondary-foreground: var(--foreground);
+    --color-accent: var(--surface-hover);
+    --color-accent-foreground: var(--foreground);
+    --color-destructive: var(--danger);
+    --color-destructive-foreground: var(--danger-foreground);
+    --color-link: var(--primary);
+
+    /* The permanent inverse shell has its own contrast-safe interaction roles. */
+    --color-sidebar: var(--inverse-surface);
+    --color-sidebar-bg: var(--inverse-surface);
+    --color-sidebar-foreground: var(--inverse-foreground);
+    --color-sidebar-accent: var(--inverse-primary);
+    --color-sidebar-accent-foreground: var(--inverse-surface);
+    --color-sidebar-border: var(--inverse-border);
+    --color-sidebar-ring: var(--inverse-primary);
+
+    --font-serif: var(--font-family-serif);
+
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: var(--radius);
+
+    --box-shadow-xs: var(--shadow-xs);
+    --box-shadow-sm: var(--shadow-sm);
+    --box-shadow: var(--shadow);
+    --box-shadow-md: var(--shadow-md);
+    --box-shadow-lg: var(--shadow-lg);
+    --box-shadow-xl: var(--shadow-xl);
+}

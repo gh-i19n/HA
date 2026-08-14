@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "cycle": 2,
+  "cycle_context": {
+    "reason": "Product owner clarified that the interview evaluates a real product; real clinic, patient, booking, report, persistence, authorization, privacy, and operational requirements must be designed rather than treated as a synthetic-only prototype.",
+    "reopened_from": "discovery",
+    "approved_by": "user",
+    "started_at": "2026-08-13T13:36:20Z",
+    "prior_cycle_archive": ".ai/sdlc/history/cycle-1-20260813T133620Z"
+  },
+  "gates": [
+    {
+      "order": 1,
+      "id": "ideation",
+      "status": "passed",
+      "artifact": "docs/sdlc/00-ideation.md",
+      "owner_roles": [
+        "product-owner",
+        "domain-user-representative"
+      ],
+      "approver_roles": [
+        "product-owner"
+      ],
+      "approved_by": "product-owner",
+      "evidence": [
+        "file:docs/sdlc/00-ideation.md"
+      ],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T12:57:38Z"
+    },
+    {
+      "order": 2,
+      "id": "discovery",
+      "status": "passed",
+      "artifact": "docs/sdlc/01-discovery.md",
+      "owner_roles": [
+        "product-owner",
+        "domain-user-representative",
+        "ux-product-designer",
+        "user-validator"
+      ],
+      "approver_roles": [
+        "product-owner"
+      ],
+      "approved_by": "product-owner",
+      "evidence": [
+        "file:docs/sdlc/01-discovery.md"
+      ],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:41:17Z"
+    },
+    {
+      "order": 3,
+      "id": "requirements",
+      "status": "passed",
+      "artifact": "docs/sdlc/02-requirements.md",
+      "owner_roles": [
+        "product-owner",
+        "domain-user-representative",
+        "qa-engineer"
+      ],
+      "approver_roles": [
+        "product-owner"
+      ],
+      "approved_by": "product-owner",
+      "evidence": [
+        "file:docs/sdlc/02-requirements.md"
+      ],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T14:02:57Z"
+    },
+    {
+      "order": 4,
+      "id": "experience-design",
+      "status": "waived",
+      "artifact": "docs/sdlc/03-experience-design.md",
+      "owner_roles": [
+        "ux-product-designer",
+        "domain-user-representative",
+        "user-validator"
+      ],
+      "approver_roles": [
+        "ux-product-designer",
+        "product-owner"
+      ],
+      "approved_by": "user",
+      "evidence": [],
+      "waiver_reason": "User approved proceeding to architecture with the experience-design direction accepted; interactive prototype, representative staff and patient usability testing, keyboard and assistive-technology validation, source-PDF accessibility policy, and patient identity/recovery validation are explicitly deferred. This waiver does not claim those activities occurred, and the risks remain required verification work before release.",
+      "updated_at": "2026-08-13T14:25:20Z"
+    },
+    {
+      "order": 5,
+      "id": "architecture",
+      "status": "in_progress",
+      "artifact": "docs/sdlc/04-architecture.md",
+      "owner_roles": [
+        "architect",
+        "database-engineer",
+        "security-privacy-engineer",
+        "devops-sre-engineer"
+      ],
+      "approver_roles": [
+        "architect"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T14:25:37Z"
+    },
+    {
+      "order": 6,
+      "id": "delivery-planning",
+      "status": "pending",
+      "artifact": "docs/sdlc/05-delivery-plan.md",
+      "owner_roles": [
+        "product-owner",
+        "architect",
+        "qa-engineer",
+        "devops-sre-engineer"
+      ],
+      "approver_roles": [
+        "product-owner",
+        "architect"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:36:20Z"
+    },
+    {
+      "order": 7,
+      "id": "implementation",
+      "status": "pending",
+      "artifact": "docs/sdlc/06-implementation.md",
+      "owner_roles": [
+        "frontend-engineer",
+        "backend-engineer",
+        "database-engineer",
+        "devops-sre-engineer",
+        "architect"
+      ],
+      "approver_roles": [
+        "architect"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:36:20Z"
+    },
+    {
+      "order": 8,
+      "id": "verification",
+      "status": "pending",
+      "artifact": "docs/sdlc/07-verification.md",
+      "owner_roles": [
+        "qa-engineer",
+        "reviewer",
+        "user-validator"
+      ],
+      "approver_roles": [
+        "qa-engineer",
+        "reviewer"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:36:20Z"
+    },
+    {
+      "order": 9,
+      "id": "security-privacy",
+      "status": "pending",
+      "artifact": "docs/sdlc/08-security-privacy.md",
+      "owner_roles": [
+        "security-privacy-engineer",
+        "trust-safety-owner"
+      ],
+      "approver_roles": [
+        "security-privacy-engineer"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:36:20Z"
+    },
+    {
+      "order": 10,
+      "id": "release-readiness",
+      "status": "pending",
+      "artifact": "docs/sdlc/09-release-readiness.md",
+      "owner_roles": [
+        "reviewer",
+        "devops-sre-engineer",
+        "operations-incident-owner"
+      ],
+      "approver_roles": [
+        "reviewer"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:36:20Z"
+    },
+    {
+      "order": 11,
+      "id": "release",
+      "status": "pending",
+      "artifact": "docs/sdlc/10-release.md",
+      "owner_roles": [
+        "reviewer",
+        "devops-sre-engineer",
+        "product-owner"
+      ],
+      "approver_roles": [
+        "user"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:36:20Z"
+    },
+    {
+      "order": 12,
+      "id": "operations-maintenance",
+      "status": "pending",
+      "artifact": "docs/sdlc/11-operations-maintenance.md",
+      "owner_roles": [
+        "operations-incident-owner",
+        "devops-sre-engineer",
+        "product-owner"
+      ],
+      "approver_roles": [
+        "operations-incident-owner",
+        "product-owner"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:36:20Z"
+    }
+  ]
+}

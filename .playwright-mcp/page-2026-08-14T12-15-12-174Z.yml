@@ -1,0 +1,9 @@
+- generic [active] [ref=f5e1]:
+  - button "Open Next.js Dev Tools" [ref=f5e7] [cursor=pointer]
+  - alert [ref=f5e11]
+  - main [ref=f5e12]:
+    - generic [ref=f5e14]:
+      - paragraph [ref=f5e15]: Book an appointment
+      - heading "Choose your laboratory." [level=1] [ref=f5e16]
+      - paragraph [ref=f5e17]: Your request goes straight to the laboratory team, who confirm the appointment time by email.
+      - generic "Loading laboratories" [ref=f5e20]

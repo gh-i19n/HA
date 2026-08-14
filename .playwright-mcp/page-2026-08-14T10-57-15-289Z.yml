@@ -1,0 +1,91 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e9] [cursor=pointer]
+  - alert [ref=e13]
+  - generic [ref=e45]:
+    - generic [ref=e48]:
+      - button "Browser Lab Laboratory" [ref=e50]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: Browser Lab
+          - generic [ref=e58]: Laboratory
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: Laboratory workspace
+          - list [ref=e63]:
+            - listitem [ref=e64]:
+              - link "Overview" [ref=e65] [cursor=pointer]:
+                - /url: /dashboard
+            - listitem [ref=e72]:
+              - link "Reports" [ref=e73] [cursor=pointer]:
+                - /url: /reports
+              - generic: "0"
+            - listitem [ref=e78]:
+              - link "Bookings" [ref=e79] [cursor=pointer]:
+                - /url: /bookings
+            - listitem [ref=e85]:
+              - link "Report templates" [ref=e86] [cursor=pointer]:
+                - /url: /templates
+        - generic [ref=e91]:
+          - generic [ref=e92]: Manage
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - link "Settings" [ref=e96] [cursor=pointer]:
+                - /url: /settings/profile
+      - generic [ref=e102]:
+        - paragraph [ref=e103]: Signed in as
+        - paragraph [ref=e104]: Browser Test
+        - paragraph [ref=e105]: Laboratory owner
+      - button "Toggle Sidebar" [ref=e106]
+    - main [ref=e107]:
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - button "Toggle Sidebar" [ref=e110] [cursor=pointer]
+          - generic [ref=e114]:
+            - paragraph [ref=e115]: Browser Lab
+            - paragraph [ref=e116]: Report operations
+        - generic [ref=e117]:
+          - button "Notifications" [ref=e118]
+          - button "Open account menu" [ref=e122]: BT
+      - generic [ref=e124]:
+        - generic [ref=e126]:
+          - paragraph [ref=e127]: Imaging operations · Delivery queue
+          - heading "Reports dashboard" [level=1] [ref=e128]
+          - paragraph [ref=e129]: Review the laboratory queue, attach reports to confirmed bookings, and control when results become available to patients.
+        - region "Report queue summary" [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e133]:
+              - paragraph [ref=e134]: Laboratory reports
+              - paragraph [ref=e135]: "0"
+            - paragraph [ref=e140]: Across the delivery queue
+          - generic [ref=e141]:
+            - generic [ref=e143]:
+              - paragraph [ref=e144]: Pending review
+              - paragraph [ref=e145]: "0"
+            - paragraph [ref=e150]: On the current page
+          - generic [ref=e151]:
+            - generic [ref=e153]:
+              - paragraph [ref=e154]: Appointment requests
+              - paragraph [ref=e155]: "0"
+            - paragraph [ref=e161]: Awaiting a decision
+          - generic [ref=e162]:
+            - generic [ref=e164]:
+              - paragraph [ref=e165]: Bookings ready
+              - paragraph [ref=e166]: "0"
+            - paragraph [ref=e172]: Eligible for report upload
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177]: Laboratory report queue
+                - generic [ref=e178]: "0"
+              - generic [ref=e179]: Latest uploads first · 25 records per page · report files load only when opened
+            - generic [ref=e180]:
+              - searchbox "Search reports on this page" [ref=e182]
+              - combobox "Filter reports by status" [ref=e183]:
+                - generic: All statuses
+          - generic [ref=e186]:
+            - generic [ref=e187]: No reports uploaded yet
+            - generic [ref=e188]: Upload a PDF against a completed booking to start the delivery queue.
+        - region [ref=e189]:
+          - generic [ref=e196]:
+            - heading "Attach a report to a booking" [level=2] [ref=e197]
+            - paragraph [ref=e198]: 0 confirmed bookings are ready for report upload.

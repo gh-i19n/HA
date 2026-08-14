@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "cycle": 1,
+  "cycle_context": {
+    "reason": "initial delivery",
+    "reopened_from": null,
+    "approved_by": null,
+    "started_at": null,
+    "prior_cycle_archive": null
+  },
+  "gates": [
+    {
+      "order": 1,
+      "id": "ideation",
+      "status": "passed",
+      "artifact": "docs/sdlc/00-ideation.md",
+      "owner_roles": [
+        "product-owner",
+        "domain-user-representative"
+      ],
+      "approver_roles": [
+        "product-owner"
+      ],
+      "approved_by": "product-owner",
+      "evidence": [
+        "file:docs/sdlc/00-ideation.md"
+      ],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T12:57:38Z"
+    },
+    {
+      "order": 2,
+      "id": "discovery",
+      "status": "passed",
+      "artifact": "docs/sdlc/01-discovery.md",
+      "owner_roles": [
+        "product-owner",
+        "domain-user-representative",
+        "ux-product-designer",
+        "user-validator"
+      ],
+      "approver_roles": [
+        "product-owner"
+      ],
+      "approved_by": "product-owner",
+      "evidence": [
+        "file:docs/sdlc/01-discovery.md"
+      ],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:27:02Z"
+    },
+    {
+      "order": 3,
+      "id": "requirements",
+      "status": "in_progress",
+      "artifact": "docs/sdlc/02-requirements.md",
+      "owner_roles": [
+        "product-owner",
+        "domain-user-representative",
+        "qa-engineer"
+      ],
+      "approver_roles": [
+        "product-owner"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": "2026-08-13T13:27:08Z"
+    },
+    {
+      "order": 4,
+      "id": "experience-design",
+      "status": "pending",
+      "artifact": "docs/sdlc/03-experience-design.md",
+      "owner_roles": [
+        "ux-product-designer",
+        "domain-user-representative",
+        "user-validator"
+      ],
+      "approver_roles": [
+        "ux-product-designer",
+        "product-owner"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    },
+    {
+      "order": 5,
+      "id": "architecture",
+      "status": "pending",
+      "artifact": "docs/sdlc/04-architecture.md",
+      "owner_roles": [
+        "architect",
+        "database-engineer",
+        "security-privacy-engineer",
+        "devops-sre-engineer"
+      ],
+      "approver_roles": [
+        "architect"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    },
+    {
+      "order": 6,
+      "id": "delivery-planning",
+      "status": "pending",
+      "artifact": "docs/sdlc/05-delivery-plan.md",
+      "owner_roles": [
+        "product-owner",
+        "architect",
+        "qa-engineer",
+        "devops-sre-engineer"
+      ],
+      "approver_roles": [
+        "product-owner",
+        "architect"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    },
+    {
+      "order": 7,
+      "id": "implementation",
+      "status": "pending",
+      "artifact": "docs/sdlc/06-implementation.md",
+      "owner_roles": [
+        "frontend-engineer",
+        "backend-engineer",
+        "database-engineer",
+        "devops-sre-engineer",
+        "architect"
+      ],
+      "approver_roles": [
+        "architect"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    },
+    {
+      "order": 8,
+      "id": "verification",
+      "status": "pending",
+      "artifact": "docs/sdlc/07-verification.md",
+      "owner_roles": [
+        "qa-engineer",
+        "reviewer",
+        "user-validator"
+      ],
+      "approver_roles": [
+        "qa-engineer",
+        "reviewer"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    },
+    {
+      "order": 9,
+      "id": "security-privacy",
+      "status": "pending",
+      "artifact": "docs/sdlc/08-security-privacy.md",
+      "owner_roles": [
+        "security-privacy-engineer",
+        "trust-safety-owner"
+      ],
+      "approver_roles": [
+        "security-privacy-engineer"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    },
+    {
+      "order": 10,
+      "id": "release-readiness",
+      "status": "pending",
+      "artifact": "docs/sdlc/09-release-readiness.md",
+      "owner_roles": [
+        "reviewer",
+        "devops-sre-engineer",
+        "operations-incident-owner"
+      ],
+      "approver_roles": [
+        "reviewer"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    },
+    {
+      "order": 11,
+      "id": "release",
+      "status": "pending",
+      "artifact": "docs/sdlc/10-release.md",
+      "owner_roles": [
+        "reviewer",
+        "devops-sre-engineer",
+        "product-owner"
+      ],
+      "approver_roles": [
+        "user"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    },
+    {
+      "order": 12,
+      "id": "operations-maintenance",
+      "status": "pending",
+      "artifact": "docs/sdlc/11-operations-maintenance.md",
+      "owner_roles": [
+        "operations-incident-owner",
+        "devops-sre-engineer",
+        "product-owner"
+      ],
+      "approver_roles": [
+        "operations-incident-owner",
+        "product-owner"
+      ],
+      "approved_by": null,
+      "evidence": [],
+      "waiver_reason": null,
+      "updated_at": null
+    }
+  ]
+}

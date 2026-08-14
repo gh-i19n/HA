@@ -18,7 +18,7 @@ function isPlatformStatus(value: unknown): value is PlatformStatus {
 }
 
 export async function getPlatformStatus(fetcher: typeof fetch = fetch): Promise<PlatformStatus> {
-  const apiBaseUrl = process.env.BACKEND_API_URL ?? "http://localhost:8080";
+  const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:8080'
   const response = await fetcher(`${apiBaseUrl}/api/v1/platform/status`, {
     cache: "no-store",
     headers: { accept: "application/json" },
