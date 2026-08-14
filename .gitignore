@@ -17,5 +17,9 @@ client/**/*.tsbuildinfo
 server/.gradle/
 server/build/
 server/**/build/
+server/bin/
 server/data/uploads/*
 !server/data/uploads/.gitkeep
+
+/client/resources/application-local.yml
+server/src/main/resources/application-local.yml
